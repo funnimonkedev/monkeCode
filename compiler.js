@@ -1,29 +1,16 @@
 function tokenizer(input) {
-
-
   let current = 0;
-  
   let tokens = [];
-
   while (current < input.length) {
-
-
     let char = input[current];
-
-
     if (char === '(') {
-
-
       tokens.push({
         type: 'paren',
         value: '(',
       });
-
       current++;
-
       continue;
     }
-
 
     if (char === ')') {
       tokens.push({
@@ -39,8 +26,7 @@ function tokenizer(input) {
       current++;
       continue;
     }
-
-
+    
     if(char === '☻') {
       console.log("you found the hidden secret!");
       tokens.push({
@@ -54,14 +40,12 @@ function tokenizer(input) {
     let NUMBERS = /[0-9]/;
     if (NUMBERS.test(char)) {
 
-
       let value = '';
 
       while (NUMBERS.test(char)) {
         value += char;
         char = input[++current];
       }
-
 
       tokens.push({ type: 'number', value });
 
@@ -81,7 +65,6 @@ function tokenizer(input) {
         char = input[++current];
       }
 
-      // Skip the closing double quote.
       char = input[++current];
 
       tokens.push({ type: 'string', value });
@@ -93,7 +76,6 @@ function tokenizer(input) {
     if (LETTERS.test(char)) {
       let value = '';
 
-     
       while (LETTERS.test(char)) {
         value += char;
         char = input[++current];
@@ -107,6 +89,31 @@ function tokenizer(input) {
 
     throw new TypeError('valid character expected: ' + `uncaught char = ${char}`);
   }
-  console.log(tokens);
+  //console.log(tokens);
+  return tokens;
+}
+
+function parser(tokens) {
+ 
+  let current = 0;
+
+
+  function walk() {
+
+    let token = tokens[current];
+    //if number
+    if(token.type === 'number') {
+
+      current++;
+
+      return {
+        type: 'NumberLiteral',
+        value: token.value,
+      };
+
+    }
+
+  }
+  
 }
 
