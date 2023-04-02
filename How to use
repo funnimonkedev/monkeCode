@@ -1,18 +1,1 @@
-
-tokenizer(" ");
-          ^^^ 
-         your string input, tokenizer() is used to break the code into tokens.
-         
-         
-console.log(tokenizer(" "));
-                      ^^^
-                      logs your string input as tokens
-                      
-                      
-
-the rest is not FINISHED!
-the rest is not FINISHED!
-the rest is not FINISHED!
-the rest is not FINISHED!
-the rest is not FINISHED!the rest is not FINISHED!
-the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!the rest is not FINISHED!
+will be rewritten in rust, I have no idea how it will work when written in rust.
